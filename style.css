@@ -66,6 +66,8 @@ btn{
   height:30px;
 }
 
+
+
 header {
   display: flex;
   width: 90vw;
@@ -176,7 +178,7 @@ iframe {
     object-fit: cover;
   }
 
-  .main-visual-container .btnEn {
+  .main-visual-container .en {
     position: absolute;
     bottom: 10px;
     right: 2%;
@@ -184,7 +186,7 @@ iframe {
     height: 30px;
   }
   
-  .main-visual-container .btnJp {
+  .main-visual-container .jp {
     position: absolute;
     bottom: 50px;
     right: 2%;
