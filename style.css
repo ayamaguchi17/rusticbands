@@ -151,7 +151,7 @@ footer {
   #wrapper-top {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 0px;
   }
 
   #wrapper-bottom {
