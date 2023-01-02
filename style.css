@@ -15,6 +15,11 @@ a {
 img {
   width: 100%;
 }
+
+button {
+  border-radius: 0%;
+  border:none;
+}
 .main-visual-container {
   display: block;
   width: 90vw;
