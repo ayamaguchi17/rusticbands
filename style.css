@@ -19,6 +19,7 @@ img {
 button {
   border-radius: 0%;
   border:none;
+  text-align: center;
 }
 .main-visual-container {
   display: block;
