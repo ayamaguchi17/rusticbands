@@ -40,8 +40,7 @@ hr {
 .main-visual {
 }
 
-.main-visual-container btn{
-  position: absolute;
+btn{
   width: 60px;
   border: none;
   height:80px;
