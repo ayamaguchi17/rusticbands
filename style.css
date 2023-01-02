@@ -21,7 +21,8 @@ button {
   border:none;
   background-color: rgb(151, 53, 26);
   color:rgb(255, 255, 255);
-  text-align: center;
+  width: 80px;
+ 
 }
 
 button:hover {
@@ -47,9 +48,6 @@ hr {
   padding: 0;
 }
 
-.main-visual {
-}
-
 
 
 .main-visual-container .en {
@@ -57,7 +55,7 @@ hr {
   bottom: 10px;
   right: 10px;
   font-size: 12px;
-  width: 63px;
+  
   height:30px;
   
 }
@@ -67,7 +65,7 @@ hr {
   bottom: 50px;
   right: 10px;
   font-size: 12px;
-  width: 63px;
+  
   height:30px;
 }
 
@@ -183,20 +181,25 @@ iframe {
     object-fit: cover;
   }
 
+
+  button{
+    width:90px;
+  }
+
   .main-visual-container .en {
     position: absolute;
     bottom: 10px;
     right: 2%;
-    width: 60px;
-    height: 30px;
+    /* width: 60px; */
+    /* height: 30px; */
   }
   
   .main-visual-container .jp {
     position: absolute;
     bottom: 50px;
     right: 2%;
-    width: 60px;
-    height: 30px;
+    /* width: 60px; */
+    /* height: 30px; */
     
   }
 
