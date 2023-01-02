@@ -20,9 +20,11 @@ button {
   border-radius: 0%;
   border:none;
   background-color: rgb(151, 53, 26);
-  color:rgb(255, 255, 255);
   width: 80px;
- 
+}
+
+button a{
+  color:rgb(255, 255, 255);
 }
 
 button:hover {
