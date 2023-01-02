@@ -19,8 +19,15 @@ img {
 button {
   border-radius: 0%;
   border:none;
-  text-align: center;
+  background-color: rgb(237, 230, 220);
 }
+
+button a{
+  align-items: center;
+  
+}
+
+
 .main-visual-container {
   display: block;
   width: 90vw;
@@ -40,11 +47,6 @@ hr {
 .main-visual {
 }
 
-btn{
-  width: 60px;
-  border: none;
-  height:80px;
-}
 
 
 .main-visual-container .en {
@@ -194,6 +196,11 @@ iframe {
     height: 30px;
     
   }
+
+  .main-visual-container a{
+    text-align:center;
+  }
+
 
   header {
     display: flex;
