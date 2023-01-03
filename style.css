@@ -3,6 +3,7 @@
   scroll-behavior: smooth;
   /* scroll-padding-top: 0px; */
   margin: 0;
+  padding: 0;
   font-family: "Crimson Text", serif;
   font-weight: 100;
 }
@@ -16,23 +17,22 @@ img {
   width: 100%;
 }
 
-button {
-  border-radius: 0%;
-  border:none;
+.lang {
   background-color: rgb(151, 53, 26);
   width: 80px;
+  height: 25px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button a{
-  color:rgb(255, 255, 255);
-}
-
-button:hover {
+.lang:hover {
   opacity: 50%;
   transition: 0.5s;
 }
-
-
 
 .main-visual-container {
   display: block;
@@ -41,43 +41,29 @@ button:hover {
   position: relative;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 2px solid #ccc;
-  margin: 2em 0;
-  padding: 0;
-}
-
-
-
-.main-visual-container .en {
+.en {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 12px;
-  
-  height:30px;
-  
 }
 
-.main-visual-container .jp {
+ .jp {
   position: absolute;
   bottom: 50px;
   right: 10px;
-  font-size: 12px;
-  
-  height:30px;
 }
-
-
 
 header {
   display: flex;
   width: 90vw;
   margin: 20px auto;
   align-items: center;
+}
+
+.menu-btn {
+  display: none;
+  color:#8e8e8e;
+  mix-blend-mode:difference
 }
 
 .logo img {
@@ -89,15 +75,18 @@ nav ul {
   font-size: 0.9rem;
   list-style: none;
   display: flex;
+  margin-left: 20px;
 }
 
 nav li {
   margin-right: 20px;
   background-color: #a2a2a2;
   width: 100px;
-  text-align: center;
-  padding: 3px;
-  height: 22px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav li:hover {
@@ -109,11 +98,22 @@ nav li a {
   color: white;
 }
 
+.side-nav {
+  display: none;
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
 }
-
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 2em 0;
+  padding: 0;
+}
 #wrapper-top {
   display: flex;
   align-items: flex-start;
@@ -156,21 +156,98 @@ footer {
   opacity: 50%;
 }
 
-
 #wrapper-access {
-  
   display: flex;
   align-items: flex-start;
   margin-top: 80px;
-
-  
 }
 
 iframe {
-  width:50%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 767px) {
+  .lang {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .side-nav {
+    display: block;
+    height: 100%;
+    width:50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #eeeae6;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+  }
+
+  .side-nav ul {
+    list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    
+  }
+
+  .side-nav li {
+    margin:20 auto 0;
+    background-color: #656565;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    height: 22px;
+    cursor: pointer;
+    
+  }
+
+  .side-nav a {
+    color: rgb(220, 220, 220);
+    display: block;
+    transition: 0.3s;
+    
+  }
+
+  
+  .close-btn a{
+    text-align: right;
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+    
+  }
+
+  .side-nav .lang-link {
+    margin-bottom:20px;
+  }
+
+
+
+  ul .side-nav-lang {
+    background-color: rgb(151, 53, 26);
+  }
+
+
+
+ .menu-btn {
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    position: fixed;
+    right: 2.3%;
+    top: 1.2%;
+    
+  }
+
+  
+  
   .main-visual-container {
     display: block;
     margin: 0;
@@ -182,30 +259,6 @@ iframe {
     height: 50vh;
     object-fit: cover;
   }
-
-
-  button{
-    width:90px;
-  }
-
-  .main-visual-container .en {
-    position: absolute;
-    bottom: 10px;
-    right: 2%;
-    /* width: 60px; */
-    /* height: 30px; */
-  }
-  
-  .main-visual-container .jp {
-    position: absolute;
-    bottom: 50px;
-    right: 2%;
-    /* width: 60px; */
-    /* height: 30px; */
-    
-  }
-
- 
 
   header {
     display: flex;
@@ -226,7 +279,7 @@ iframe {
   }
 
   nav li {
-    width:85px;
+    width: 85px;
     height: 22px;
     padding: 5 1;
     margin: 6 0;
@@ -254,7 +307,7 @@ iframe {
     margin-top: 30px;
   }
 
-  #wrapper-access{
+  #wrapper-access {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
@@ -266,7 +319,7 @@ iframe {
   }
 
   iframe {
-    width:100%;
+    width: 100%;
   }
 
   .content {
@@ -279,12 +332,10 @@ iframe {
     opacity: 50%;
   }
 
-
-  @media only screen and (max-width: 300px){
+  @media only screen and (max-width: 300px) {
     .logo img {
       display: inline-flex;
       max-width: 135px;
     }
-
   }
 }

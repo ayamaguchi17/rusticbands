@@ -13,26 +13,42 @@
     <link rel="icon" href="img/favicon.ico">
     <title>Rustic bands</title>
 </head>
-
 <div class="main-visual-container">
-    <div class="menu-btn" onclick="openNav()">&#9776;</div>
     <img class="main-visual" src="img/mainvisual.jpg" alt="">
-    <a class="lang en" href="#">ENGLISH</a>
-    <a class="lang jp" href="index.html">日本語</a>
+
+    <a class="btn en" href="en.html">ENGLISH</a>
+    <a class="btn jp" href="index.html">日本語</a>
+
 
 </div>
 <header>
     <div class="logo">
         <img src="img/logo.svg" alt="">
-
+        <span class="menu-btn">&#9776;</span>
     </div>
     <nav>
         <ul>
-            <li><a class="engage-btn" href="#wrapper-top" >Engagement</a></li>
-            <li><a class="wedding-btn" href="#wrapper-bottom" >Wedding</a></li>
-            <li><a class="access-btn" href="#wrapper-access" >Access</a></li>
+            <li><a class="engage-btn" href="#wrapper-top">Engagement</a></li>
+            <li><a class="wedding-btn" href="#wrapper-bottom">Wedding</a></li>
+            <li><a class="access-btn" href="#wrapper-access">Access</a></li>
         </ul>
     </nav>
+
+    <!-- Responsive Sidebar -->
+    <div class="side-nav" id="side-nav">
+        <a href="#" class="close-btn"> &#10006;</a>
+        <ul>
+            <li><a lass="btn jp"href="index.html">日本語</a></li>
+            <li><a class="btn en" href="en.html">ENGLISH</a></li>
+        </ul>
+        <ul>
+            <li><a class="side-engage-btn" href="#wrapper-top">婚約指輪</a></li>
+            <li><a class="side-wedding-btn" href="#wrapper-bottom">結婚指輪</a></li>
+            <li><a class="side-access-btn" href="#wrapper-access">アクセス</a></li>
+        </ul>
+
+    </div>
+
 
 </header>
 
@@ -42,8 +58,7 @@
         <div class="content">
             <h1 class="engage-title">My promise to you</h1>
             <h3>Engagement ring</h3>
-            <p class="engage-text">
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan venenatis mi,
+            <p class="engage-text">orem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan venenatis mi,
                 in lobortis libero vestibulum at. Donec vitae nisl non nibh rhoncus semper ut id urna. Ut nisi arcu,
                 elementum quis iaculis vitae, dignissim at lorem. Duis congue elit velit, sed varius lacus suscipit a.
                 Aenean congue, velit id porta congue, risus turpis finibus libero, sed convallis arcu diam ut lorem.
@@ -52,8 +67,7 @@
                 ipsum sem, sit amet molestie elit luctus id. Vivamus accumsan, leo non dignissim condimentum, quam
                 turpis euismod ipsum, nec elementum leo arcu a mauris. Sed et magna semper, posuere diam et, volutpat
                 nibh. Praesent aliquam aliquam purus. Praesent arcu erat, fermentum non diam id, vestibulum lobortis
-                sem.
-            </p>
+                sem.</p>
 
         </div>
     </div>
@@ -62,16 +76,14 @@
         <div class="content">
             <h1 class="wedding-title">From this day onward, I'm yours</h1>
             <h3>Wedding band</h3>
-            <p class="wedding-text">
-                Aliquam ac turpis in augue malesuada mollis quis semper neque. Proin convallis
+            <p class="wedding-text">Aliquam ac turpis in augue malesuada mollis quis semper neque. Proin convallis
                 sapien enim, id ullamcorper ipsum tristique et. Vivamus faucibus, ex in imperdiet tristique, odio lorem
                 tristique diam, ac pellentesque metus eros a velit. Proin purus purus, molestie sodales est vel,
                 ultrices bibendum nisl. Donec ut tortor vitae mauris finibus faucibus eget in urna. Nullam accumsan
                 interdum mi ac tincidunt. Ut lacinia nunc id odio fringilla viverra. Nunc quis tincidunt eros. <br><br>
                 Integer non viverra metus, id laoreet augue. Sed maximus, felis a dapibus pulvinar, nibh dui molestie
                 neque, non ultrices orci justo vitae justo. Nulla facilisis dignissim augue. Nam vitae sem non orci
-                iaculis semper. Aliquam sed viverra sem, volutpat vehicula magna.
-            </p>
+                iaculis semper. Aliquam sed viverra sem, volutpat vehicula magna.</p>
 
         </div>
     </div>
@@ -95,6 +107,8 @@
             </p>
         </div>
 
+
+
     </div>
 </main>
 
@@ -102,32 +116,7 @@
     <p>© 2023 Rustic Bands</p>
 </footer>
 
-<!-- Responsive Sidebar -->
-<div class="side-nav" id="side-nav">
-    <div class="close-btn"> <a href="#" onclick="closeNav()"> &#10006;</a></div>
-
-    <ul class="lang-link">
-        <li class="side-nav-lang"><a href="index.html" >日本語</a></li>
-        <li class="side-nav-lang"><a href="#" >ENGLISH</a></li>
-    </ul>
-    <ul class="section-link">
-        <li><a class="side-engage-btn" href="#wrapper-top" onclick="closeNav()">Engagement</a></li>
-        <li><a class="side-wedding-btn" href="#wrapper-bottom" onclick="closeNav()">Wedding</a></li>
-        <li><a class="side-access-btn" href="#wrapper-access" onclick="closeNav()">Access</a></li>
-    </ul>
-
-</div>
-
-<script>
-    function openNav() {
-        document.getElementById("side-nav").style.width = "50%"
-    }
-
-    function closeNav() {
-        document.getElementById("side-nav").style.width = "0%"
-    }
-
-</script>
+<!-- <script src="script.js"></script> -->
 
 <body>
 
