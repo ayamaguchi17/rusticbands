@@ -186,6 +186,7 @@ footer {
     background-color: #cfcfcf;
     overflow-x: hidden;
     transition: 0.3s ease-in;
+    z-index: 20;
 
   }
 
