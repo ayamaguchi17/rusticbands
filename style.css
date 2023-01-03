@@ -4,8 +4,8 @@
   /* scroll-padding-top: 0px; */
   margin: 0;
   padding: 0;
-  font-family: "Crimson Text", serif;
-  font-weight: 100;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 300;
 }
 
 a {
@@ -27,6 +27,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Crimson Text', serif;
 }
 
 .lang:hover {
@@ -96,6 +97,7 @@ nav li:hover {
 
 nav li a {
   color: white;
+  font-family: 'Crimson Text', serif;
 }
 
 .side-nav {
@@ -148,6 +150,7 @@ h1 {
 h3 {
   font-size: 1.25rem;
   color: #4d4c4c;
+  font-family: 'Crimson Text', serif;
 }
 
 footer {
@@ -166,6 +169,7 @@ footer {
   width: 50%;
   height: 450px;
 }
+
 
 @media only screen and (max-width: 767px) {
   .lang {
@@ -207,6 +211,8 @@ footer {
     padding: 3px;
     height: 25px;
     cursor: pointer;
+     font-family: 'Crimson Text', serif;
+    
     
   
     
@@ -216,18 +222,23 @@ footer {
     color: rgb(220, 220, 220);
     transition: 0.3s;
     line-height: 2;
+    font-family: 'Crimson Text', serif;
     
     
   }
 
   
-  .close-btn a{
+  .close-btn {
     text-align: right;
     margin: 15px;
     font-size: 25px;
     cursor: pointer;
-    color: rgb(92, 92, 92);
     
+    
+  }
+
+  .close-btn a{
+    color: rgb(92, 92, 92);
   }
 
   .side-nav .lang-link {
