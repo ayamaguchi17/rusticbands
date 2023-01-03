@@ -162,8 +162,9 @@ footer {
   margin-top: 80px;
 }
 
-iframe {
+#map {
   width: 50%;
+  height: 450px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -185,6 +186,7 @@ iframe {
     background-color: #eeeae6;
     overflow-x: hidden;
     transition: 0.3s ease-in;
+
   }
 
   .side-nav ul {
@@ -318,13 +320,18 @@ iframe {
     margin: auto;
   }
 
-  iframe {
-    width: 100%;
-  }
+ 
 
   .content {
     padding: 10 0 30;
   }
+
+
+  #map {
+    width:100%;
+    height: 450px;
+  }
+
 
   footer {
     text-align: center;

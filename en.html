@@ -28,9 +28,9 @@
     </div>
     <nav>
         <ul>
-            <li><a class="engage-btn" href="#wrapper-top" >Engagement</a></li>
-            <li><a class="wedding-btn" href="#wrapper-bottom" >Wedding</a></li>
-            <li><a class="access-btn" href="#wrapper-access" >Access</a></li>
+            <li><a class="engage-btn" href="#wrapper-top">Engagement</a></li>
+            <li><a class="wedding-btn" href="#wrapper-bottom">Wedding</a></li>
+            <li><a class="access-btn" href="#wrapper-access">Access</a></li>
         </ul>
     </nav>
 
@@ -76,7 +76,10 @@
         </div>
     </div>
     <div id="wrapper-access">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6544.863072845903!2d135.8025997!3d34.8956185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600111092eb28db1%3A0x72edd51680741747!2z5Lit5p2R6Jek5ZCJ5pys5bqXIOacrOW6lw!5e0!3m2!1sja!2sjp!4v1672747280623!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHYQ3XEsAz8m6GCrJ4tVgnpJJcNhAoteE&region=JP&language=en&callback=initMap&v=weekly"
+            defer></script>
         <div class="content">
             <h1 class="access-title">Visit us</h1>
             <h3>Access</h3>
@@ -106,8 +109,8 @@
     <div class="close-btn"> <a href="#" onclick="closeNav()"> &#10006;</a></div>
 
     <ul class="lang-link">
-        <li class="side-nav-lang"><a href="index.html" >日本語</a></li>
-        <li class="side-nav-lang"><a href="#" >ENGLISH</a></li>
+        <li class="side-nav-lang"><a href="index.html#wrapper-top">日本語</a></li>
+        <li class="side-nav-lang"><a href="#">ENGLISH</a></li>
     </ul>
     <ul class="section-link">
         <li><a class="side-engage-btn" href="#wrapper-top" onclick="closeNav()">Engagement</a></li>
@@ -118,7 +121,7 @@
 </div>
 
 <script>
-closeNav();
+    closeNav();
 
     function openNav() {
         document.getElementById("side-nav").style.width = "50%"
@@ -127,6 +130,24 @@ closeNav();
     function closeNav() {
         document.getElementById("side-nav").style.width = "0%"
     }
+
+    // for google map
+    function initMap() {
+        // The location of uji
+        const uji = { lat: 34.89044, lng: 135.80325 };
+        // The map, centered at uji
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: uji,
+        });
+        // The marker, positioned at uji
+        const marker = new google.maps.Marker({
+            position: uji,
+            map: map,
+        });
+    }
+
+    window.initMap = initMap;
 
 </script>
 
