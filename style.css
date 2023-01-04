@@ -135,11 +135,21 @@ hr {
 
 .content {
   padding: 0 50px 20 50px;
-  font-weight: 900;
+ 
 }
 
 .content p {
   margin-top: 30px;
+}
+
+.content-jp {
+  padding: 0 50px 20 50px;
+}
+
+.content-jp p {
+ 
+  margin-top: 30px;
+  line-height:2em;
 }
 
 h1 {
