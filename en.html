@@ -17,10 +17,10 @@
 </head>
 
 <div class="main-visual-container">
-    <div class="menu-btn" onclick="openNav()">&#9776;</div>
+    <div id="menu-btn" onclick="openNav()">&#9776;</div>
     <img class="main-visual" src="img/mainvisual.jpg" alt="">
-    <a class="lang en" href="#">ENGLISH</a>
-    <a class="lang jp" href="index.html">日本語</a>
+    <a class="lang en btn" href="#">ENGLISH</a>
+    <a class="lang jp btn" href="index.html">日本語</a>
 
 </div>
 <header>
@@ -102,41 +102,16 @@ All of our wedding rings are handmade by our skilled craftsmen and are made with
         <li class="side-nav-lang"><a href="#">ENGLISH</a></li>
     </ul>
     <ul class="section-link">
-        <li><a class="side-engage-btn" href="#wrapper-top" onclick="closeNav()">Engagement</a></li>
-        <li><a class="side-wedding-btn" href="#wrapper-bottom" onclick="closeNav()">Wedding</a></li>
-        <li><a class="side-access-btn" href="#wrapper-access" onclick="closeNav()">Access</a></li>
+        <li><a class="side-engage-btn btn" href="#wrapper-top" onclick="closeNav()">Engagement</a></li>
+        <li><a class="side-wedding-btn btn" href="#wrapper-bottom" onclick="closeNav()">Wedding</a></li>
+        <li><a class="side-access-btn btn" href="#wrapper-access" onclick="closeNav()">Access</a></li>
     </ul>
 
 </div>
+<div><a id="blocker" href="#" onclick="closeNav()"></a></div>
 
-<script>
-    closeNav();
-
-    function openNav() {
-        document.getElementById("side-nav").style.width = "50%"
-    }
-
-    function closeNav() {
-        document.getElementById("side-nav").style.width = "0%"
-    }
-
-    // for google map
-    function initMap() {
-        // The location of uji
-        const uji = { lat: 34.89044, lng: 135.80325 };
-        // The map, centered at uji
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 16,
-            center: uji,
-        });
-        // The marker, positioned at uji
-        const marker = new google.maps.Marker({
-            position: uji,
-            map: map,
-        });
-    }
-
-    window.initMap = initMap;
+<script src="script.js">
+    
 
 </script>
 

@@ -15,12 +15,13 @@
     <link rel="icon" href="img/favicon.ico">
     <title>Rustic bands</title>
 </head>
+<body>
 
 <div class="main-visual-container">
-    <div class="menu-btn" onclick="openNav()">&#9776;</div>
+    <div id="menu-btn" onclick="openNav()">&#9776;</div>
     <img class="main-visual" src="img/mainvisual.jpg" alt="">
-    <a class="lang en" href="en.html">ENGLISH</a>
-    <a class="lang jp" href="#">日本語</a>
+    <a class="lang en btn" href="en.html">ENGLISH</a>
+    <a class="lang jp btn" href="#">日本語</a>
 
 </div>
 <header>
@@ -30,9 +31,9 @@
     </div>
     <nav>
         <ul>
-            <li><a class="engage-btn" href="#wrapper-top">婚約指輪</a></li>
-            <li><a class="wedding-btn" href="#wrapper-bottom">結婚指輪</a></li>
-            <li><a class="access-btn" href="#wrapper-access">アクセス</a></li>
+            <li><a class="engage-btn " href="#wrapper-top">婚約指輪</a></li>
+            <li><a class="wedding-btn " href="#wrapper-bottom">結婚指輪</a></li>
+            <li><a class="access-btn " href="#wrapper-access">アクセス</a></li>
         </ul>
     </nav>
 
@@ -103,45 +104,21 @@
         <li class="side-nav-lang"><a href="en.html#wrapper-top">ENGLISH</a></li>
     </ul>
     <ul class="section-link">
-        <li><a class="side-engage-btn" href="#wrapper-top" onclick="closeNav()">婚約指輪</a></li>
-        <li><a class="side-wedding-btn" href="#wrapper-bottom" onclick="closeNav()">結婚指輪</a></li>
-        <li><a class="side-access-btn" href="#wrapper-access" onclick="closeNav()">アクセス</a></li>
+        <li><a class="side-engage-btn btn" href="#wrapper-top" onclick="closeNav()">婚約指輪</a></li>
+        <li><a class="side-wedding-btn btn" href="#wrapper-bottom" onclick="closeNav()">結婚指輪</a></li>
+        <li><a class="side-access-btn btn" href="#wrapper-access" onclick="closeNav()">アクセス</a></li>
     </ul>
 
 </div>
 
-<script>
-    closeNav();
+<div><a id="blocker" href="#" onclick="closeNav()"></a></div>
 
-    function openNav() {
-        document.getElementById("side-nav").style.width = "50vw"
-    }
+<script src="script.js">
 
-    function closeNav() {
-        document.getElementById("side-nav").style.width = "0%"
-    }
 
-    // for google map
-    function initMap() {
-        // The location of uji
-        const uji = { lat: 34.89044, lng: 135.80325 };
-        // The map, centered at uji
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 16,
-            center: uji,
-        });
-        // The marker, positioned at uji
-        const marker = new google.maps.Marker({
-            position: uji,
-            map: map,
-        });
-    }
-
-    window.initMap = initMap;
 
 </script>
 
-<body>
 
 </body>
 
