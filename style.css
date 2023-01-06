@@ -105,6 +105,8 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
 hr {
   display: block;
   height: 1px;
@@ -131,7 +133,7 @@ hr {
 }
 
 .content {
-  padding: 0 50px 20 50px;
+  padding: 0px 50px 20px 50px;
  
 }
 
@@ -140,7 +142,7 @@ hr {
 }
 
 .content-jp {
-  padding: 0 50px 20 50px;
+  padding: 0px 50px 20px 50px;
 }
 
 .content-jp p {
@@ -203,21 +205,21 @@ footer {
   #blocker {
     display:block;;
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     content: ' ';
     background: rgba(0,0,0,.5);
-    z-index: 2;
+    z-index: 2px;
   }
   #side-nav {
     display: block;
     height: 100%;
     width:50%;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     background-color: #cfcfcf;
     overflow-x: hidden;
     transition: 0.3s ease-in;
@@ -235,7 +237,7 @@ footer {
   }
 
   .side-nav li {
-    margin:20 auto 0;
+    margin:20px auto 0px;
     background-color: #656565;
     width: 110px;
     text-align: center;
@@ -330,8 +332,8 @@ footer {
   nav li {
     width: 85px;
     height: 22px;
-    padding: 5 1;
-    margin: 6 0;
+    padding: 5px 1px;
+    margin: 6px 0px;
   }
 
   nav a {
@@ -340,7 +342,7 @@ footer {
 
   main {
     max-width: 95%;
-    margin: 0 auto;
+    margin: 0px auto;
   }
 
   #wrapper-top {
@@ -370,11 +372,11 @@ footer {
  
 
   .content {
-    padding: 10 0 30;
+    padding: 10px 0px 30px;
   }
 
   .content-jp {
-    padding: 10 0 30;
+    padding: 10px 0px 30px;
   }
 
 
