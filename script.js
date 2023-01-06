@@ -18,7 +18,7 @@ function closeNav() {
 
 
 
-for google map
+// for google map
 function initMap() {
     // The location of uji
     const uji = { lat: 34.89044, lng: 135.80325 };
