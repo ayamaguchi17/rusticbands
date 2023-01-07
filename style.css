@@ -4,7 +4,7 @@
   /* scroll-padding-top: 0px; */
   margin: 0;
   padding: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 300;
 }
 
@@ -17,7 +17,6 @@ img {
   width: 100%;
 }
 
-
 .lang {
   background-color: rgb(151, 53, 26);
   width: 80px;
@@ -28,7 +27,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 .lang:hover {
@@ -49,7 +48,7 @@ img {
   right: 10px;
 }
 
- .jp {
+.jp {
   position: absolute;
   bottom: 50px;
   right: 10px;
@@ -64,9 +63,42 @@ header {
 
 #menu-btn {
   display: none;
-  color:#8e8e8e;
-  mix-blend-mode:difference
+  color: #8e8e8e;
+  mix-blend-mode: difference;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: -5px;
+  z-index: 10;
+  transition: 1s;
 }
+
+
+
+#up-btn {
+  display: none;
+  mix-blend-mode: difference;
+  opacity: 80%;
+  font-size: 30px;
+  border: none;
+  padding: 0px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+  cursor: pointer;
+  background-color: #8e8e8e;
+  border-radius: 10%;
+  color: white;
+  cursor: pointer;
+  line-height: 30px;
+  width: 30px;
+  transition: all 0.5s ease-out;
+  
+}
+
+
 
 .logo img {
   display: inline-flex;
@@ -98,14 +130,13 @@ nav li:hover {
 
 nav li a {
   color: white;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 hr {
   display: block;
@@ -134,7 +165,6 @@ hr {
 
 .content {
   padding: 0px 50px 20px 50px;
- 
 }
 
 .content p {
@@ -146,9 +176,8 @@ hr {
 }
 
 .content-jp p {
- 
   margin-top: 30px;
-  line-height:2em;
+  line-height: 2em;
 }
 
 h1 {
@@ -159,7 +188,7 @@ h1 {
 h3 {
   font-size: 1.25rem;
   color: #4d4c4c;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 footer {
@@ -184,7 +213,7 @@ footer {
 }
 
 .blocker {
-  display:none;
+  display: none;
 }
 
 /* ---------------------------------------------------------------- */
@@ -203,20 +232,20 @@ footer {
     display: none;
   }
   #blocker {
-    display:block;;
+    display: block;
     position: fixed;
     top: 0px;
     left: 0px;
     bottom: 0px;
     right: 0px;
-    content: ' ';
-    background: rgba(0,0,0,.5);
+    content: " ";
+    background: rgba(0, 0, 0, 0.5);
     z-index: 2px;
   }
   #side-nav {
     display: block;
     height: 100%;
-    width:50%;
+    width: 50%;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -224,7 +253,6 @@ footer {
     overflow-x: hidden;
     transition: 0.3s ease-in;
     z-index: 20;
-
   }
 
   .side-nav ul {
@@ -232,73 +260,53 @@ footer {
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
-    
-    
   }
 
   .side-nav li {
-    margin:20px auto 0px;
+    margin: 20px auto 0px;
     background-color: #656565;
     width: 110px;
     text-align: center;
     padding: 3px;
     height: 25px;
     cursor: pointer;
-     font-family: 'Crimson Text', serif;
-    
-    
-  
-    
+    font-family: "Crimson Text", serif;
   }
 
   .side-nav a {
     color: rgb(220, 220, 220);
     transition: 0.3s;
     line-height: 2;
-    font-family: 'Crimson Text', serif;
-    
-    
+    font-family: "Crimson Text", serif;
   }
 
-  
   .close-btn {
     text-align: right;
-    margin: 15px;
+    margin: -3px 13px 0px 0px;
     font-size: 25px;
     cursor: pointer;
-    
-    
   }
 
-  .close-btn a{
+  .close-btn a {
     color: rgb(92, 92, 92);
   }
+/* 
+  .close-btn:hover {
+background-color: #000000;
+  } */
 
   .side-nav .lang-link {
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
-
-
 
   ul .side-nav-lang {
     background-color: rgb(151, 53, 26);
   }
 
-
-
- #menu-btn {
-    font-size: 40px;
-    cursor: pointer;
+  #menu-btn {
     display: flex;
-    position: fixed;
-    right: 2.3%;
-    top: 1.2%;
-    z-index: 10;
-    
   }
 
-  
-  
   .main-visual-container {
     display: block;
     margin: 0;
@@ -369,8 +377,6 @@ footer {
     margin: auto;
   }
 
- 
-
   .content {
     padding: 10px 0px 30px;
   }
@@ -379,13 +385,11 @@ footer {
     padding: 10px 0px 30px;
   }
 
-
   #map {
-    width:100%;
+    width: 100%;
     height: 450px;
     z-index: 0;
   }
-
 
   footer {
     text-align: center;
@@ -393,15 +397,14 @@ footer {
     opacity: 50%;
   }
 
+ 
 
-
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
-
+  /* ---------------------------------------------------------------- */
+  /* ---------------------------------------------------------------- */
+  /* ---------------------------------------------------------------- */
+  /* ---------------------------------------------------------------- */
+  /* ---------------------------------------------------------------- */
+  /* ---------------------------------------------------------------- */
 
   @media only screen and (max-width: 300px) {
     .logo img {

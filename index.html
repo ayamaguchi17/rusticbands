@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +14,18 @@
     <meta charset="Shift_JIS">
     <meta charset="euc-jp">
     <meta charset="iso-2022-jp">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico">
     <title>Rustic bands</title>
-    
 </head>
-<body>
 
+<body>
     <div class="main-visual-container">
         <div id="menu-btn" onclick="openNav()">&#9776;</div>
         <img class="main-visual" src="img/mainvisual.jpg" alt="">
@@ -121,8 +120,10 @@
 
     </div>
 
+    <button id="up-btn" onclick="scrollUp()" title="Go to top">^</button>
+
     <div><a id="blocker" href="#" onclick="closeNav()"></a></div>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
