@@ -58,7 +58,7 @@ header {
   display: flex;
   width: 90vw;
   margin: 20px auto;
-  align-items: center;
+  align-items:center;
 }
 
 #menu-btn {
@@ -82,6 +82,7 @@ header {
 .logo img {
   display: inline-flex;
   width: 220px;
+  padding-top:7px;
 }
 
 nav ul {
